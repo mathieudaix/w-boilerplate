@@ -8,15 +8,15 @@
 ## Installation
 
 ```shell script
-yarn i
+npm i
 ```
 
 ## Usage
 
 ```shell script
 # Run the development server (open a new page with hot reload)
-yarn run dev
+npm run dev
 
 # Build productions files (update the dist folder)
-yarn run prod 
+npm run prod 
 ```
