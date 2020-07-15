@@ -1,0 +1,53 @@
+.nav {
+	padding: s(2) 0 s(4);
+	position: relative;
+	z-index: 10;
+	&__container {
+		border-bottom: 1px solid rgba($color-dark, 0.25);
+		padding-bottom: s(0.5);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		position: relative;
+		z-index: 5;
+	}
+	&__icon {
+		width: 2rem;
+		height: 1.4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		cursor: pointer;
+		position: relative;
+		z-index: 5;
+		span {
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: $color-dark;
+		}
+	}
+	&__menu {
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $color-white;
+		opacity: 0;
+		visibility: hidden;
+		&__container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+			li {
+				&:not(:last-of-type) {
+					margin-bottom: s(1);
+				}
+			}
+		}
+	}
+}

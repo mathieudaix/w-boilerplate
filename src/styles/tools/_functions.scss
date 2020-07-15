@@ -1,0 +1,9 @@
+$s: 1rem;
+@function s($value) {
+	@return $value * $s;
+}
+
+$f: 1rem;
+@function f($value) {
+	@return $value * $f;
+}
