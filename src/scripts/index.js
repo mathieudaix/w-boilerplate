@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				return scroll.destroy()
 			},
 			beforeEnter() {
-				navTimeline.reversed() ? navTimeline.play() : navTimeline.reverse()
+				navTimeline.reverse()
 				const pageTransitionTimeline = gsap.timeline({ defaults: { duration: 0.8, ease: 'expo.inOut' } })
 				pageTransitionTimeline
 					.to(pageTransitionPane, { scaleY: 0, stagger: 0.1 }, 0.5)

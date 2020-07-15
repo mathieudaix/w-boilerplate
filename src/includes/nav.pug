@@ -1,12 +1,12 @@
 nav(data-scroll-section).nav
 	.container.nav__container
-		a(href="index.html").nav__logo Website Boilerplate
+		a(href="index.html").nav__logo website boilerplate
 		div.nav__icon
 			span
 			span
 		ul.nav__menu
 			.container.nav__menu__container
-				- const navItem = { "index": "Home", "about": "About" }
+				- const navItem = { "index": "home", "about": "about" }
 				each item, path  in navItem
 					li
 						a(href=`${path}.html`)= item
