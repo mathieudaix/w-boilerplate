@@ -57,7 +57,8 @@ module.exports = {
 		}),
 		new CopyPlugin({
 			patterns: [
-				{ from: 'images/**', to: path.resolve(__dirname, 'dist') }
+				{ from: 'images/**', to: path.resolve(__dirname, 'dist') },
+				{ from: 'docs/**', to: path.resolve(__dirname, 'dist') }
 			]
 		}),
 		...['index', 'about'].map(el => {
