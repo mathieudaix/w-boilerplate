@@ -4,6 +4,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 
+const createPages = require('./tasks/createPages.js')
+
 module.exports = {
 	entry: './src/scripts/index.js',
 	output: {
@@ -61,7 +63,7 @@ module.exports = {
 				{ from: 'docs/**', to: path.resolve(__dirname, 'dist') }
 			]
 		}),
-		...['index', 'about'].map(el => {
+		...createPages.pages.map(el => {
 			return new HtmlWebpackPlugin({
 				filename: `${el}.html`,
 				template: `./src/${el}.pug`,

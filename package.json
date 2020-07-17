@@ -8,12 +8,14 @@
 	],
 	"scripts": {
 		"dev": "webpack-dev-server",
-		"prod": "webpack && node copyFiles.js",
-		"img": "node resizeImages.js"
+		"prod": "webpack && node tasks/copyFiles.js",
+		"img:generate": "node tasks/resizeImages.js",
+		"img:clear": "node tasks/clearImages.js"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.10.5",
 		"@babel/preset-env": "^7.10.4",
+		"ask-questions": "^1.0.0",
 		"autoprefixer": "^9.8.5",
 		"babel-loader": "^8.1.0",
 		"clean-webpack-plugin": "^3.0.0",
