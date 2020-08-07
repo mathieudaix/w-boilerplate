@@ -5,11 +5,19 @@ block data
 	title Website Boilerplate - Homepage
 
 block content
-	main(data-barba="container" data-barba-namespace="default")
+	main(data-barba="container" data-barba-namespace="default").demo.page__home
 		header(data-scroll-section)
 			.container
-				h1 homepage
-				picture
-					source(srcset="images/nicholas-beel-F8bZLAZu9cY-unsplash-small.webp 500w, images/nicholas-beel-F8bZLAZu9cY-unsplash-medium.webp 1000w, images/nicholas-beel-F8bZLAZu9cY-unsplash-large.webp 1500w" sizes="92vw" type="image/webp")
-					source(srcset="images/nicholas-beel-F8bZLAZu9cY-unsplash-small.jpg 500w, images/nicholas-beel-F8bZLAZu9cY-unsplash-medium.jpg 1000w, images/nicholas-beel-F8bZLAZu9cY-unsplash-large.jpg 1500w" sizes="92vw" type="image/jpeg")
-					img(src="images/nicholas-beel-F8bZLAZu9cY-unsplash-small.jpg" alt="Image")
+				.demo__title
+					h1(data-scroll data-scroll-speed="4" data-scroll-position="top") homepage
+					p.js-demo__title__scroll scroll to second image
+				.demo__img(data-scroll data-scroll-offset="25%")
+					picture
+						source(srcset="images/nicholas-beel-F8bZLAZu9cY-unsplash-small.webp 500w, images/nicholas-beel-F8bZLAZu9cY-unsplash-medium.webp 1000w, images/nicholas-beel-F8bZLAZu9cY-unsplash-large.webp 1500w" sizes="50vw" type="image/webp")
+						source(srcset="images/nicholas-beel-F8bZLAZu9cY-unsplash-small.jpg 500w, images/nicholas-beel-F8bZLAZu9cY-unsplash-medium.jpg 1000w, images/nicholas-beel-F8bZLAZu9cY-unsplash-large.jpg 1500w" sizes="50vw" type="image/jpeg")
+						img(src="images/nicholas-beel-F8bZLAZu9cY-unsplash-small.jpg" alt="Image")
+				.demo__img.js-demo__img__second(data-scroll data-scroll-offset="25%")
+					picture
+						source(srcset="images/esther-wilhelmsson-7kcc_iXX4Z0-unsplash-small.webp 500w, images/esther-wilhelmsson-7kcc_iXX4Z0-unsplash-medium.webp 1000w, images/esther-wilhelmsson-7kcc_iXX4Z0-unsplash-large.webp 1500w" sizes="50vw" type="image/webp")
+						source(srcset="images/esther-wilhelmsson-7kcc_iXX4Z0-unsplash-small.jpg 500w, images/esther-wilhelmsson-7kcc_iXX4Z0-unsplash-medium.jpg 1000w, images/esther-wilhelmsson-7kcc_iXX4Z0-unsplash-large.jpg 1500w" sizes="50vw" type="image/jpeg")
+						img(src="images/esther-wilhelmsson-7kcc_iXX4Z0-unsplash-small.jpg" alt="Image")

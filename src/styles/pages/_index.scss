@@ -1,0 +1,32 @@
+.demo {
+	&__title {
+		display: flex;
+		align-items: center;
+		h1 {
+			font-size: f(4);
+		}
+		p {
+			font-size: f(0.8);
+			text-decoration: underline;
+			cursor: pointer;
+			margin-left: s(4);
+			padding-top: s(1);
+		}
+	}
+	&__img {
+		width: 50vw;
+		overflow: hidden;
+		margin-top: s(4);
+		img {
+			opacity: 0;
+			transform: scale(1.1);
+			transition: opacity 1.5s $ease, transform 1.5s $ease;
+		}
+		&.is-inview {
+			img {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+}
