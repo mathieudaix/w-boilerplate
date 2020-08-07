@@ -54,9 +54,9 @@ Correctly load images.
 
 ```pug
 picture
-	source(srcset="images/image-small.webp 500w, images/image-medium.webp 1000w, images/image-large.webp 1500w" sizes="92vw" type="image/webp")
-	source(srcset="images/image-small.jpg 500w, images/image-medium.jpg 1000w, images/image-large.jpg 1500w" sizes="92vw" type="image/jpeg")
-	img(src="images/image-small.jpg" alt="Image")
+  source(srcset="images/image-small.webp 500w, images/image-medium.webp 1000w, images/image-large.webp 1500w" sizes="92vw" type="image/webp")
+  source(srcset="images/image-small.jpg 500w, images/image-medium.jpg 1000w, images/image-large.jpg 1500w" sizes="92vw" type="image/jpeg")
+  img(src="images/image-small.jpg" alt="Image")
 ```
 
 ## Styling
@@ -96,12 +96,12 @@ The functions are declared in [_functions.scss](https://github.com/mathieudaix/w
 ```scss
 // spacing
 .block {
-	padding: s(2);
+  padding: s(2);
 }
 
 // font-size
 .title {
-	font-size: f(4);
+  font-size: f(4);
 }
 ```
 
@@ -119,7 +119,7 @@ $to-medium: $from-medium - 1;
 
 // _pages.scss
 @media (min-width: $from-small) and (max-width: $to-medium) {
-	font-size: $size-small;
+  font-size: $size-small;
 }
 ```
 
