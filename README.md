@@ -1,4 +1,5 @@
 # w-boilerplate
+Documentation to use this template.
 
 ## Table of contents
 
